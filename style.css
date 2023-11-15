@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #F5F7F8;
 }
 
 .main-carousel {
@@ -19,11 +21,37 @@ body {
 }
 
 .carousel-cell {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 90%;
     height: 500px;
     margin-right: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     border-radius: 10px;
+    background-color: #495E57;
+    padding: 10px 20px;
+}
+
+.carousel-cell__photo-container {
+    height: 110px;
+    width: 110px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.photo-container__photo {
+    width: 100%;
+}
+
+.text-container__person-name {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.text-container__opinion {
+    letter-spacing: 0.5px;
 }
