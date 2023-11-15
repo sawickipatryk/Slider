@@ -1,6 +1,8 @@
 const elem = document.querySelector('.main-carousel');
 const flkty = new Flickity(elem, {
-    // options
-    cellAlign: 'left',
-    contain: true
+    freeScroll: true,
+    contain: true,
+    prevNextButtons: true,
+    pageDots: true,
+    wrapAround: true,
 });
